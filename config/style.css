@@ -1,0 +1,1712 @@
+/* ==========================================================================
+   1. GLOBAL SECTIONS STYLE (CIWAANNADA MAQAALADA)
+   ========================================================================== */
+.section-title {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #0a5c36; /* Berde Green */
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.section-title .line {
+    width: 80px;
+    height: 4px;
+    background-color: #16301c;
+    margin: 0 auto 15px auto;
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #666666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   2. ABOUT SPLIT SECTION (QAYBTA ABOUT-KA)
+   ========================================================================== */
+.about-split-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.about-split-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-split-content h2 {
+    font-size: 36px;
+    color: #0a5c36;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.about-split-line {
+    width: 60px;
+    height: 4px;
+    background-color: #27ae60;
+    margin-bottom: 25px;
+}
+
+.about-split-text {
+    font-size: 16px;
+    color: #444444;
+    line-height: 1.8;
+}
+
+/* ==========================================================================
+   3. UNIVERSAL GRID & CARDS (SERVICES, SECTORS, PROJECTS)
+   ========================================================================== */
+.universal-grid {
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.content-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.content-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.content-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.content-body {
+    padding: 25px;
+}
+
+.content-body h3 {
+    font-size: 20px;
+    color: #0a5c36;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.content-body p {
+    font-size: 14.5px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   4. CAREERS SECTION (JOB OPPORTUNITIES)
+   ========================================================================== */
+.py-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+.job-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #eef0f2;
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.badge {
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.btn-apply {
+    background-color: #0a5c36;
+    color: #ffffff !important;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: auto;
+    transition: background 0.2s;
+}
+
+.btn-apply:hover {
+    background-color: #16301c;
+}
+
+/* ==========================================================================
+   5. RESPONSIVE DESIGN (SHAASHADAHA YARYAR)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .about-split-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-split-image img {
+        height: 300px;
+    }
+    
+    .universal-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================================
+   CAREERS & JOB OPPORTUNITIES SECTION
+   ========================================================================== */
+
+/* 1. Guud ahaan Qaybta (Section Styling) */
+.bg-light {
+    background-color: #f8f9fa !important; /* Midab khafiif ah oo kaararka caawiya */
+}
+
+.section-title h2 {
+    font-size: 32px;
+    letter-spacing: 0.5px;
+}
+
+.section-title .line {
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+/* 2. Naqshadda Kaarka Shaqada (Job Card Styling) */
+.job-card {
+    background: #ffffff;
+    border: 1px solid #eef0f2;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Si ay dhammaan kaararku isku dherer u noqdaan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Marka jiirka (mouse-ka) la dul dhigo kaarka */
+.job-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(6, 64, 43, 0.1) !important; /* Hoos iftiimaya oo cagaar daciif ah leh */
+}
+
+/* 3. Sawirka Gudaha Kaarka (Job Image) */
+.job-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Si uusan sawirku u kala bixin uuna u buuxiyo booska */
+    border-bottom: 1px solid #f0f2f5;
+    transition: opacity 0.3s ease;
+}
+
+.job-card:hover .job-img {
+    opacity: 0.95;
+}
+
+/* 4. Badbaadooyinka (Badges & Icons) */
+.badge.bg-light {
+    background-color: #f1f3f5 !important;
+    color: #06402B !important; /* Text-ka badge-ka oo laga dhigay cagaarka Berde */
+    font-weight: 600;
+    font-size: 12px;
+    border: 1px solid #dee2e6 !important;
+    border-radius: 6px;
+}
+
+.text-muted {
+    color: #6c757d !important;
+    font-size: 13px;
+}
+
+.text-muted i {
+    font-size: 14px;
+}
+
+/* 5. Qoraalka Ciwaanka iyo Sharraxaadda */
+.job-card h4 {
+    font-size: 20px;
+    color: #0a5c36; /* Midabka Cagaarka Berde */
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.job-card p.text-muted {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555555 !important;
+    margin-bottom: 20px;
+}
+
+/* 6. Badhanka Codsiga (Apply Now Button) */
+.btn-apply {
+    background-color: #06402B; /* Cagaar dig ah */
+    color: #ffffff !important;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+    width: 100%;
+    margin-top: auto; /* Wuxuu badhanka geynayaa mar walba kaarka hoosadiisa guud */
+    transition: all 0.3s ease;
+    border: none;
+}
+
+/* Marka jiirka la dul dhigo badhanka */
+.btn-apply:hover {
+    background-color: #16301c; /* Cagaar ka madow kii hore */
+    box-shadow: 0 4px 12px rgba(6, 64, 43, 0.2);
+}
+
+.btn-apply i {
+    transition: transform 0.3s ease;
+}
+
+.btn-apply:hover i {
+    transform: translateX(5px); /* Fallaarta ayaa yara dhaqaaqaysa dhanka midig */
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (SHAASHADAHA MOBILES-KA)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .job-img {
+        height: 180px; /* Wax yar ayaa la dhimayaa dhererka sawirka si uu shaashada yar ugu habboonaado */
+    }
+    
+    .section-title h2 {
+        font-size: 26px;
+    }
+}
+
+/*service menu page*/
+/* ==========================================================================
+   1. MAIN HEADER & NAVIGATION CSS (MENU-GA CUSUB)
+   ========================================================================== */
+.main-header {
+    background-color: #06402B; /* Cagaarka rasmiga ah ee Berde */
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo-ga geesta bidig */
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+/* Menu Links Fix (Inay saf toos ah u wada galaan) */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px; /* Masaafada u dhaxaysa menus-ka */
+}
+
+.nav-link {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    padding: 8px 0;
+    position: relative;
+}
+
+/* Xariiqda hoosta ka soo baxaysa marka la dul istaago */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8cd4a4;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after, 
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:hover, 
+.nav-link.active {
+    color: #8cd4a4 !important;
+}
+
+/* Badhanka Contact-ka ee rasmiga ah (Sida Docol Group) */
+.nav-contact-btn {
+    background-color: #8cd4a4; 
+    color: #06402B !important;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nav-contact-btn:hover {
+    background-color: #ffffff;
+    color: #06402B !important;
+    transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   2. HERO SERVICES SECTION FIX
+   ========================================================================== */
+.hero-services {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    letter-spacing: 2px;
+}
+
+.hero-content h1 span {
+    color: #8cd4a4; /* Midabka cagaarka qaliniga ah */
+}
+
+.hero-line {
+    width: 60px;
+    height: 4px;
+    background-color: #8cd4a4;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #e0e0e0;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Responsive Design ee Shaashadaha Mobilada */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+}
+
+
+
+/* ==========================================================================
+   BOGGA MASHAARIICDA (PROJECTS PAGE STYLING)
+   ========================================================================== */
+
+/* 1. Guud ahaan Qaabka Bogga */
+body {
+    background-color: #f4f7f6 !important;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Menu-ga Sare (Navbar Fix) */
+.navbar {
+    background-color: #06402B !important; /* Cagaarka rasmiga ah ee Berde */
+    padding: 15px 0 !important;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ffffff !important;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.nav-links {
+    display: flex !important;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+    position: relative;
+}
+
+/* Xariiqda hoos ka timaada marka Link-ga la dul istaago */
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #8cd4a4;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.nav-links li a:hover {
+    color: #8cd4a4 !important;
+}
+
+/* Badhanka Contact-ka ee geesta jidigeeda */
+.btn-contact {
+    background-color: #8cd4a4 !important;
+    color: #06402B !important;
+    padding: 9px 20px !important;
+    border-radius: 6px;
+    font-weight: 700 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-contact::after {
+    display: none !important; /* Ka saar xariiqda hoose badhanka */
+}
+
+.btn-contact:hover {
+    background-color: #ffffff !important;
+    color: #06402B !important;
+    transform: translateY(-2px);
+}
+
+/* 3. Hero Section-ka Mashaariicda */
+.hero-projects {
+    background: linear-gradient(rgba(6, 64, 43, 0.8), rgba(6, 64, 43, 0.8)), 
+                url('../sawir/project.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: white;
+    padding: 90px 0 !important;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-projects h1 {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero-projects h1 span {
+    color: #8cd4a4;
+}
+
+.hero-projects p {
+    font-size: 16px;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+/* 4. Ciwaanka Qaybta (Section Title) */
+.section-title {
+    text-align: center;
+    padding: 60px 20px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #06402B;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-title .line {
+    width: 70px;
+    height: 4px;
+    background-color: #06402B;
+    margin: 0 auto 20px;
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* 5. Nidaamka Kaararka ee Mashaariicda (Universal Grid) */
+.universal-grid {
+    max-width: 1200px;
+    margin: 40px auto 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.content-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #eef0f2;
+}
+
+.content-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(6, 64, 43, 0.12);
+}
+
+.content-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-bottom: 4px solid #06402B;
+    transition: opacity 0.3s ease;
+}
+
+.content-card:hover img {
+    opacity: 0.95;
+}
+
+.content-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.content-body h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #06402B;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.content-body p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.7;
+    margin: 0;
+    text-align: justify;
+}
+
+/* ==========================================================================
+   RESPONSIVE (SHAASHADAHA MOBILES-KA)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero-projects h1 {
+        font-size: 36px;
+    }
+    .universal-grid {
+        grid-template-columns: 1fr; /* Hal tiir oo toos ah mobilada */
+        gap: 25px;
+    }
+}
+
+
+
+/* ==========================================================================
+   BOGGA QAYBAHA SHIRKADDA (SECTORS PAGE STYLING)
+   ========================================================================== */
+
+/* 1. Dib-u-hagaajinta Guud ee Bogga */
+body {
+    background-color: #f4f7f6 !important;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 2. Menu-ga Sare (Navbar Styling) */
+.navbar {
+    background-color: #06402B !important; /* Cagaarka rasmiga ah ee Berde */
+    padding: 15px 0 !important;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff !important;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #8cd4a4 !important; /* Midabka cagaarka fudud */
+    margin-left: 5px;
+}
+
+.nav-links {
+    display: flex !important;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+    position: relative;
+}
+
+/* Xariiqda hoose ee muujinaysa bogga aad joogto (Active/Hover) */
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #8cd4a4;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+    width: 100%;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #8cd4a4 !important;
+}
+
+/* 3. Hero Section-ka Bogga Sectors */
+.hero-sectors {
+    background: linear-gradient(rgba(6, 64, 43, 0.82), rgba(6, 64, 43, 0.82)), 
+                url('../sawir/services.jpg') !important; /* Wuxuu isticmaalayaa sawirkaaga background-ka */
+    background-size: cover !important;
+    background-position: center !important;
+    color: white;
+    padding: 100px 0 !important;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-sectors h1 {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 0 0 10px;
+}
+
+.hero-sectors h1 span {
+    color: #8cd4a4;
+}
+
+.hero-sectors p {
+    font-size: 16px;
+    opacity: 0.9;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* 4. Ciwaanka Bogga (Section Title) */
+.section-title {
+    text-align: center;
+    padding: 60px 20px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #06402B;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-title .line {
+    width: 70px;
+    height: 4px;
+    background-color: #06402B;
+    margin: 0 auto 20px;
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* 5. Nidaamka Laylay-ga iyo Kaararka (Grid & Content Cards) */
+.universal-grid {
+    max-width: 1200px;
+    margin: 40px auto 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.content-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #eef0f2;
+}
+
+.content-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(6, 64, 43, 0.12);
+}
+
+.content-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-bottom: 4px solid #06402B;
+}
+
+.content-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.content-body h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #06402B;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.content-body p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.7;
+    margin: 0;
+    text-align: justify;
+}
+
+/* 6. Naqshadda Footer-ka (Main Footer) */
+.main-footer {
+    background-color: #02230c !important;
+    color: #cccccc;
+    padding: 60px 0 20px !important;
+    margin-top: auto; /* Wuxuu hubinayaa in footer-ku mar walba hoos fariisto */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-col h3, .footer-col h4 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-col p {
+    font-size: 14.5px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.footer-col i {
+    color: #8cd4a4;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.social-links a {
+    color: #cccccc;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.social-links a:hover {
+    color: #8cd4a4;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 40px;
+    padding-top: 20px;
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ==========================================================================
+   RESPONSIVE (SHAASHADAHA MOBILES-KA)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero-sectors h1 {
+        font-size: 36px;
+    }
+    .universal-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================================
+   BOGGA ABOUT US (ABOUT PAGE STYLING)
+   ========================================================================== */
+
+/* 1. Dib-u-hagaajinta Guud ee Bogga */
+body {
+    background-color: #ffffff;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Menu-ga Sare (Bootstrap Navbar Customization) */
+.navbar {
+    background-color: #06402B !important; /* Cagaarka rasmiga ah ee Berde */
+    padding: 12px 0 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.logo-img-nav {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.logo-text-main {
+    color: #ffffff !important;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.logo-text-sub {
+    color: #8cd4a4 !important; /* Cagaarka khafiifka ah */
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+/* Menu Links */
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 15px !important;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+/* Xariiqda hoose ee muujinaysa bogga aad joogto */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 15px;
+    background-color: #8cd4a4;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: calc(100% - 30px);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #8cd4a4 !important;
+}
+
+/* Badhanka Contact-ka ee ku dhex jira Navbar-ka */
+.btn-contact-nav {
+    background-color: #8cd4a4 !important;
+    color: #06402B !important;
+    border-radius: 6px;
+    padding: 8px 20px !important;
+    font-weight: 700 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-contact-nav::after {
+    display: none !important; /* Ka saar xariiqda hoose */
+}
+
+.btn-contact-nav:hover {
+    background-color: #ffffff !important;
+    color: #06402B !important;
+    transform: translateY(-2px);
+}
+
+/* 3. Hero Section (Header-ka Bogga) */
+.about-page-header {
+    width: 100%;
+    position: relative;
+}
+
+.about-page-header h1 {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.breadcrumb-item a {
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: #8cd4a4 !important;
+}
+
+/* 4. Qaybta Xogta About-ka (Image & Content) */
+.about-img-wrapper {
+    position: relative;
+    padding: 10px;
+}
+
+/* Saamaynta quruxda badan ee ka dambaysa sawirka */
+.about-img-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #8cd4a4;
+    top: 30px;
+    left: -20px;
+    z-index: 1;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.about-img-wrapper img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.about-img-wrapper:hover img {
+    transform: scale(1.02);
+}
+
+.about-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.about-text {
+    text-align: justify;
+}
+
+/* 5. Naqshadda Footer-ka (Footer Section) */
+.footer-section {
+    background-color: #02230c;
+    color: #e0e0e0;
+    padding: 70px 0 20px;
+    margin-top: 60px;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: #8cd4a4;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #b0b8b4;
+}
+
+/* Baraha Bulshada (Social Links) */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #8cd4a4;
+    color: #06402B;
+    transform: translateY(-3px);
+}
+
+/* Footer Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links li a {
+    color: #b0b8b4;
+    text-decoration: none;
+    font-size: 14.5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links li a:hover {
+    color: #8cd4a4;
+    padding-left: 6px;
+}
+
+/* Footer Contact */
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact li {
+    margin-bottom: 15px;
+    font-size: 14.5px;
+    display: flex;
+    align-items: center;
+    color: #b0b8b4;
+}
+
+.footer-contact li i {
+    color: #8cd4a4;
+    margin-right: 12px;
+    font-size: 16px;
+    width: 20px;
+}
+
+.footer-hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 40px 0 20px;
+}
+
+.footer-bottom p {
+    font-size: 13.5px;
+    color: #88928e;
+    margin: 0;
+}
+
+.footer-bottom p span {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   RESPONSIVE (SHAASHADAHA MOBILES-KA)
+   ========================================================================== */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding: 20px 0;
+        text-align: center;
+    }
+    .navbar-nav .nav-link::after {
+        display: none; /* Ka saar line-ka mobilada */
+    }
+    .btn-contact-nav {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .about-img-wrapper {
+        margin-bottom: 40px;
+    }
+    .about-img-wrapper::before {
+        display: none; /* Ka saar jidka cagaarka ah ee ka dambeeya sawirka mobilada */
+    }
+    .about-img-wrapper img {
+        height: 300px;
+    }
+    .about-content h2 {
+        font-size: 28px;
+    }
+}
+
+/* ==========================================================================
+   BOGGA SHAQOOYINKA (CAREERS PAGE STYLING)
+   ========================================================================== */
+
+/* Variables (Midabada rasmiga ah ee Berde) */
+:root {
+    --primary-green: #06402B;
+    --light-green: #0a5c36;
+    --accent-green: #8cd4a4;
+    --bg-light: #f4f7f6;
+    --text-muted: #666666;
+    --white: #ffffff;
+}
+
+/* 1. Dib-u-hagaajinta Guud */
+body {
+    background-color: var(--bg-light) !important;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 2. Menu-ga Sare (Navbar Fix) */
+.navbar {
+    background-color: var(--primary-green) !important;
+    padding: 15px 0 !important;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.logo span {
+    color: var(--white) !important;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo-text-sub {
+    color: var(--accent-green) !important;
+    font-size: 11px;
+    display: block;
+    width: 100%;
+    margin-top: -2px;
+    padding-left: 50px; /* Si uu magacu toos ugu aado logo-ga hoostiisa */
+}
+
+.nav-links {
+    display: flex !important;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: var(--white) !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+    position: relative;
+}
+
+/* Line-ka hoos ka imaanaya marka la dul istaago linkiyada kale */
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--accent-green);
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.nav-links li a:hover {
+    color: var(--accent-green) !important;
+}
+
+/* 3. Careers Hero Section */
+.hero-careers {
+    background: linear-gradient(rgba(6, 64, 43, 0.85), rgba(6, 64, 43, 0.85)), 
+                url('../sawir/careers-bg.jpg') !important; /* Hubi in magaca sawirka background-ka uu sax yahay */
+    background-size: cover !important;
+    background-position: center !important;
+    color: var(--white);
+    padding: 100px 0 !important;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-careers h1 {
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.hero-careers h1 span {
+    color: var(--accent-green);
+}
+
+.hero-careers p {
+    font-size: 17px;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* 4. Naqshadda Kaararka Shaqada (Job Cards) */
+.job-card {
+    background: var(--white);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+    border: 1px solid #eef0f2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.job-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(6, 64, 43, 0.1);
+}
+
+.job-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--light-green);
+}
+
+.job-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.job-card .badge {
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.job-card small {
+    font-size: 13px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Badhanka Apply-ga */
+.btn-apply {
+    display: block;
+    text-align: center;
+    background-color: var(--light-green);
+    color: var(--white) !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14.5px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(10, 92, 84, 0.15);
+}
+
+.btn-apply:hover {
+    background-color: var(--primary-green);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(6, 64, 43, 0.2);
+}
+
+/* 5. Naqshadda Footer-ka (Main Footer) */
+.main-footer {
+    background-color: #02230c;
+    color: #cad4d0;
+    padding: 70px 0 20px;
+    margin-top: auto; /* Wuxuu hubiyaa inuu mar walba hoos dego footer-ka */
+}
+
+.footer-logo h5 {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.footer-logo h5 span {
+    color: var(--accent-green);
+}
+
+.footer-desc {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #a4b2ac;
+}
+
+/* Baraha Bulshada */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--white);
+    border-radius: 50%;
+    margin-right: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--accent-green);
+    color: var(--primary-green);
+    transform: translateY(-3px);
+}
+
+/* Quick Links iyo Ciwaannada hoose */
+.footer-title {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links li a {
+    color: #a4b2ac;
+    text-decoration: none;
+    font-size: 14.5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-links li a:hover {
+    color: var(--accent-green);
+    padding-left: 6px;
+}
+
+/* Contact Items */
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 14.5px;
+    color: #a4b2ac;
+}
+
+.contact-item i {
+    color: var(--accent-green);
+    font-size: 16px;
+    width: 24px;
+    margin-right: 10px;
+}
+
+.footer-hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 40px 0 20px;
+}
+
+.footer-bottom p {
+    font-size: 13.5px;
+    color: #81928b;
+    margin: 0;
+}
+
+.footer-bottom p strong {
+    color: var(--white);
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   RESPONSIVE (SHAASHADAHA MOBILES-KA)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo-text-sub {
+        padding-left: 0;
+        text-align: center;
+    }
+    .hero-careers h1 {
+        font-size: 34px;
+    }
+    .footer-title {
+        margin-top: 20px;
+    }
+}
+
+
+.hero-projects {
+    /* linear-gradient wuxuu sawirka dhabarkiisa ka dhigayaa cagaar madow oo khafiif ah si qoraalka cad u muuqdo */
+    background: linear-gradient(rgba(6, 64, 43, 0.75), rgba(6, 64, 43, 0.75)), 
+                url('../sawir/careers.jpg') !important;
+    
+    background-size: cover !important;        /* Wuxuu ku fidinayaa sawirka booska oo dhan */
+    background-position: center !important;    /* Wuxuu sawirka keenayaa dhexda */
+    background-repeat: no-repeat !important;   /* Wuxuu diidayaa in sawirku dhowr jeer soo laabto */
+    color: white;
+    padding: 100px 0 !important;
+    text-align: center;
+    width: 100%;
+}
+
